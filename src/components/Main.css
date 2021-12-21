@@ -1,0 +1,10 @@
+.Main {
+    background-color: white;
+    color: #1f1f1f;
+    font-size: 17px;
+    font-family: 微软雅黑, "Microsoft Yahei", arial;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: calc(100vh - 68px);
+    text-align: center;
+}
