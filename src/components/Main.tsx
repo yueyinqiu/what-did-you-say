@@ -26,16 +26,18 @@ export default class Main extends React.Component<{}, MainState> {
     render() {
         return (
             <div className="Main">
-                <h1>你说的是啥？</h1>
                 <div>
-                    <textarea placeholder="你想让人看不懂的内容" wrap="virtual" ref={this.plainRef} value={this.state.plaintext} onInput={this.keepInput.bind(this)}></textarea>
+                    <h1>你说的是啥？</h1>
+                </div>
+                <div>
+                    <textarea placeholder="输入你想让人看不懂的内容，然后点击“变复杂吧！”" wrap="virtual" ref={this.plainRef} value={this.state.plaintext} onInput={this.keepInput.bind(this)}></textarea>
+                </div>
+                <div>
+                    <textarea placeholder="输入你想要去看懂它的内容，然后点击“变简单吧！”" wrap="virtual" ref={this.cipherRef} value={this.state.ciphertext} onInput={this.keepInput.bind(this)}></textarea>
                 </div>
                 <div>
                     <button onClick={this.enc.bind(this)}>变复杂吧！</button>
                     <button onClick={this.dec.bind(this)}>变简单吧！</button>
-                </div>
-                <div>
-                    <textarea placeholder="你想要去看懂它的内容" wrap="virtual" ref={this.cipherRef} value={this.state.ciphertext} onInput={this.keepInput.bind(this)}></textarea>
                 </div>
             </div>
         );
