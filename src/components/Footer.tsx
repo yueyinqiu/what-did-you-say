@@ -10,7 +10,7 @@ export default class Footer extends React.Component<{}> {
         return (
             <div className="footer">
                 <p>
-                    到底啦！
+                    在GITHUB开源：<a href="https://github.com/yueyinqiu/what-did-you-say.git" target="_blank">https://github.com/yueyinqiu/what-did-you-say.git</a>
                 </p>
             </div>
         );
